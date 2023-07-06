@@ -1,0 +1,8 @@
+<div>
+    <app-hijo-menor>
+    <ng-container *ngFor="let boton of botones">
+        <!-- Aquí puedes usar cada botón individualmente -->
+        <button [innerHTML]="boton.innerHTML" (click)="boton.click()"></button>
+     </ng-container>
+    </app-hijo-menor>
+</div>
